@@ -1,0 +1,220 @@
+ /* ---------- General ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: black;
+  background-color: whitesmoke;
+}
+
+a {
+  color: darkgreen;
+}
+
+a:hover {
+  color: gold;
+}
+
+hr {
+  border-top: 2px dashed gold;
+  opacity: 1;
+}
+
+/* ---------- Marquee ---------- */
+.announce {
+  background-color: gold;
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  margin-left: 6px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: gold;
+  border-bottom: 2px solid gold;
+}
+
+/* ---------- Hero section ---------- */
+.hero {
+  background-color: honeydew;
+  border-bottom: 3px solid gold;
+}
+
+.hero h1 {
+  font-size: 30px;
+}
+
+.hero-text {
+  max-width: 550px;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  margin: 3px;
+}
+
+/* ---------- Headings ---------- */
+h2 {
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: gold;
+  text-underline-offset: 5px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+/* ---------- Text ---------- */
+mark {
+  background-color: gold;
+  padding: 0 4px;
+}
+
+blockquote {
+  background-color: honeydew;
+  padding: 10px 15px;
+  color: dimgray;
+}
+
+/* ---------- Category badges ---------- */
+.badge {
+  font-size: 12px;
+  margin: 2px;
+}
+
+.badge:hover {
+  background-color: gold !important;
+  color: black !important;
+}
+
+/* ---------- Product cards ---------- */
+.card {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+
+.card:hover {
+  border-color: green;
+  box-shadow: 0 4px 10px lightgray;
+}
+
+.card-img-top {
+  height: 170px;
+  object-fit: cover;
+  background-color: honeydew;
+}
+
+.card-title {
+  font-size: 15px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.btn-success {
+  background-color: darkgreen;
+  border-color: darkgreen;
+}
+
+.btn-success:hover {
+  background-color: gold;
+  border-color: gold;
+  color: black;
+}
+
+.btn-warning:hover {
+  background-color: darkgreen;
+  border-color: darkgreen;
+  color: white;
+}
+
+/* ---------- Table ---------- */
+table {
+  background-color: white;
+}
+
+th {
+  background-color: darkgreen !important;
+  color: white !important;
+}
+
+/* ---------- Form ---------- */
+form {
+  box-shadow: 0 2px 8px lightgray;
+}
+
+form h2 {
+  text-decoration: none;
+  border-bottom: 2px solid gold;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: green;
+  box-shadow: 0 0 0 3px honeydew;
+}
+
+.form-check-input:checked {
+  background-color: darkgreen;
+  border-color: darkgreen;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 30px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .navbar .nav-link {
+    margin-left: 0;
+  }
+}

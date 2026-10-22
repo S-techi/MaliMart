@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: #dedede;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    .card {
+      display: flex;
+      width: 100%;
+      max-width: 1187px;
+      min-height: 750px;
+    }
+
+    /* Left panel */
+    .welcome {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
+    }
+
+    .welcome h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .welcome p {
+      max-width: 460px;
+      font-size: 1.35rem;
+      line-height: 1.5;
+      margin-bottom: 32px;
+    }
+
+    .welcome a {
+      display: inline-block;
+      padding: 22px 46px;
+      border-radius: 40px;
+      background: rgba(37, 99, 235, 0.85);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 1.25rem;
+      text-decoration: none;
+    }
+
+    .welcome a:hover {
+      background: #1d4ed8;
+    }
+
+    /* Right panel */
+    .form-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 54px;
+      background: #fff;
+    }
+
+    .form-panel h1 {
+      font-size: 3.2rem;
+      font-weight: 600;
+      color: #0a0a0a;
+      margin-bottom: 24px;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      height: 70px;
+      margin-bottom: 32px;
+      padding: 0 24px;
+      border: 1px solid #ececec;
+      border-radius: 8px;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      font-size: 1.3rem;
+      color: #111;
+    }
+
+    input:focus {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+      background: #fff;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      height: 86px;
+      border: 0;
+      border-radius: 8px;
+      background: #2563eb;
+      color: #fff;
+      font-family: "Poppins", Arial, sans-serif;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    button:focus-visible {
+      outline: 2px solid #111;
+      outline-offset: 3px;
+    }
+
+    .or {
+      margin-top: 22px;
+      font-size: 1.35rem;
+      color: #222;
+    }
+
+    .social {
+      display: flex;
+      gap: 20px;
+      margin-top: 14px;
+    }
+
+    .social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 1.15rem;
+      text-decoration: none;
+    }
+
+    .facebook { background: #3b5998; font-size: 1.5rem; }
+    .google   { background: #d4573b; font-size: 1.05rem; }
+    .linkedin { background: #0e76a8; }
+
+    /* Stack on small screens */
+    @media (max-width: 800px) {
+      .card {
+        flex-direction: column;
+        min-height: 0;
+      }
+
+      .welcome {
+        padding: 48px 24px;
+      }
+
+      .form-panel {
+        padding: 32px 24px;
+      }
+
+      .form-panel h1 {
+        font-size: 2.4rem;
+      }
+
+      input {
+        height: 60px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        height: 64px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <section class="welcome">
+      <h2>Come join us!</h2>
+      <p>We are so excited to have you here. If you haven't already, create an account to get access to exclusive offers, rewards, and discounts.</p>
+      <a href="#">Already have an account? Signin.</a>
+    </section>
+
+    <section class="form-panel">
+      <h1>Signup</h1>
+      <form action="#" method="post">
+        <input type="text" name="username" placeholder="Username" value="ByteWebster" aria-label="Username">
+        <input type="email" name="email" placeholder="Email" value="support@bytewebster.com" aria-label="Email">
+        <input type="password" name="password" placeholder="Password" value="password" aria-label="Password">
+        <input type="password" name="confirm" placeholder="Confirm password" value="password" aria-label="Confirm password">
+        <button type="submit">Signup</button>
+      </form>
+
+      <p class="or">or signup with</p>
+      <div class="social">
+        <a href="#" class="facebook" aria-label="Sign up with Facebook">f</a>
+        <a href="#" class="google" aria-label="Sign up with Google">G+</a>
+        <a href="#" class="linkedin" aria-label="Sign up with LinkedIn">in</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
+
+<div class="signin-box">
+  Already have an account? <a href="#">Signin.</a>
+</div>
